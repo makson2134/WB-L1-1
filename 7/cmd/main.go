@@ -54,7 +54,7 @@ func main() {
 			for key := range keys {
 				num, ok := sm.GetValue(key)
 				if !ok {
-					fmt.Printf("Error: gourutine %d couldn't get value with key: %d\n", id, num)
+					fmt.Printf("Error: goroutine %d couldn't get value with key: %d\n", id, num)
 				} else {
 					fmt.Printf("Goroutine %d read %d from safe map\n", id, num)
 				}
@@ -63,6 +63,6 @@ func main() {
 	}
 
 	wg.Wait()
-	fmt.Println("|--------------------------------END OF THE PROGRAMM---------------------------------|")
+	fmt.Println("|--------------------END OF THE PROGRAMM--------------------|")
 
 }
